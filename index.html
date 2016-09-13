@@ -1,4 +1,5 @@
-<!doctype html>
+<!doctype>
+<html>
 <head>
 	<!-- meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,9 +10,21 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
+
+		<!-- RS5.0 Main Stylesheet -->
+		<link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
+		 
+		<!-- RS5.0 Layers and Navigation Styles -->
+		<link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
+		<link rel="stylesheet" type="text/css" href="revolution/css/navigation.css"> 
+		 
+     <script src="jquery.js"></script>
+		<!-- RS5.0 Core JS Files -->
+		<script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
+		<script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
 	
 </head>
-<html>
+
 <body>
 <!-- navigation -->
 
@@ -50,6 +63,41 @@
 <!-- slideer -->
 <section class="row">
 <div id="home"></div>
+
+<!-- START REVOLUTION SLIDER 5.0 -->
+<div class="rev_slider_wrapper">
+ <div id="slider1" class="rev_slider"  data-version="5.0">
+  <ul> 
+   <li data-transition="fade"> 
+     <!-- MAIN IMAGE -->
+     <img src="img/atable.jpg"  alt=""  width="1920" height="1280"> 
+     <!-- LAYER NR. 1 -->
+     <div class="tp-caption News-Title tp-caption-1" 
+        data-x="left" data-hoffset="80" 
+        data-y="top" data-voffset="350" 
+        data-whitespace="normal"
+        data-transform_idle="o:1;" 
+        data-transform_in="o:0" 
+        data-transform_out="o:0" 
+        data-start="500">Complete Web Solution Meal</div>
+   </li>
+ 
+   <li data-transition="fade"> 
+     <!-- MAIN IMAGE -->
+     <img src="img/Slash-1024x576-1024x576.jpg"  alt=""  width="1920" height="1280"> 
+     <!-- LAYER NR. 1 -->
+     <div class="tp-caption News-Title" 
+        data-x="left" data-hoffset="80" 
+        data-y="top" data-voffset="350" 
+        data-whitespace="normal"
+        data-transform_idle="o:1;" 
+        data-transform_in="o:0" 
+        data-transform_out="o:0" 
+        data-start="500">Kamal Solutions</div>
+   </li>
+  </ul> 
+ </div><!-- END REVOLUTION SLIDER -->
+</div><!-- END OF SLIDER WRAPPER -->
 	
 </section>
 <!-- /slider -->
@@ -96,8 +144,11 @@
 	<section class="container">
 		<h3 class="text-center">The Team</h3>
 		<section class="col-lg-12">
-			<section class="thumbnail col-md-6 ">
-			<img src="img/afia.jpeg" alt="Afia Boadi Debrah image" class="img-responsive img-circle">
+
+			<section class=" col-md-6 ">
+			<section class="thumbnail">
+		<img src="img/afia.jpeg" alt="Afia Boadi Debrah image" class="img-responsive img-circle">
+
 				<section class="caption">
 					<h5>Afia Boadi Debrah <span class="small"> Content manager and Ux / Ui Designer </span></h5>
 					<p>Having a masters in Computer Science specializing in Advanced Information System and Software engineering, Afia is passionate about harmonizing psychology, business and information technology. She loves working on UI/UX aspects of software development and is equally passionate about finding IT solutions for businesses in all sectors (Education, Agriculture, Banking, Insurance etc).</p>
@@ -154,7 +205,20 @@
         </div>
     </footer>
 
-
+<script> 
+jQuery(document).ready(function() { 
+   jQuery("#slider1").revolution({
+      sliderType:"standard",
+      sliderLayout:"auto",
+      delay:9000,
+      navigation: {
+          arrows:{enable:true} 
+      }, 
+      gridwidth:1230,
+      gridheight:720 
+    }); 
+}); 
+</script>
 <!-- /footer -->
 
 <!-- jquery -->
