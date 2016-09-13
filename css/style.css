@@ -1,0 +1,108 @@
+/* ==== Google font ==== */
+@import url('http://fonts.googleapis.com/css?family=Lato:400,300,700,900');
+
+/*glossary*/
+
+body {
+	background: #ecf0f1;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6em;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    overflow-x:hidden;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+}
+
+*{
+    box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+}
+h5 .small {
+    font-weight: 400;
+    line-height: 1;
+    color: #f45;
+}
+
+.icon-bar{
+    background: #000;
+}
+
+.thumbnail{
+    border-radius:0;
+    border:transparent;
+    padding:10px;
+   
+}
+
+
+/*navigation*/
+nav{
+	background:rgba(255,255,255,0.9);
+    margin-bottom: 20px;
+
+}
+
+nav a{
+    color: #000;
+    opacity:1;
+}
+
+.navbar-brand{
+    font-weight: 800;
+
+}
+.navbar-nav>li>a:hover{
+    background: #2c3e50;
+    color: #fafafa;
+    border-bottom:2px solid #f45;
+}
+
+/*services*/
+.services{
+    margin-top:7%;
+
+}
+
+.services h5, .team h5{
+	text-align: center;
+}
+
+/*team*/
+
+.team img{
+    text-align: center
+}
+
+.team{
+
+}
+
+
+/*footer*/
+
+footer{
+    padding:4%;
+    padding-top:20px;
+
+    background: #fff;
+    display:flex;
+    flex-direction: row;
+ flex:1;
+}
+
+/*social networks*/
+.connect a{
+    color: #000;
+}
+
+.connect a:focus, .connect a:hover{
+    color: #e55;
+}
