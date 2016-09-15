@@ -4,7 +4,7 @@
 /*glossary*/
 
 body {
-	background: #ecf0f1;
+	 background: #2c3e50;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
 
@@ -31,6 +31,10 @@ h5 .small {
     color: #f45;
 }
 
+h3{
+    color:#fff;
+}
+
 .icon-bar{
     background: #000;
 }
@@ -39,19 +43,30 @@ h5 .small {
     border-radius:0;
     border:transparent;
     padding:10px;
+    border-bottom: 7px solid #f96;
+   
+}
+
+.thumbnail:hover, .thumbnail:focus{
+    border-radius:0;
+    border:transparent;
+    padding:10px;
+    border-bottom: 7px solid #f45;
    
 }
 
 
+
 /*navigation*/
 nav{
-	background:rgba(255,255,255,0.9);
+	/*background:rgba(255,255,255,0.9);*/
+    background:  #551a8b;
     margin-bottom: 20px;
 
 }
 
 nav a{
-    color: #000;
+    color: #fff;
     opacity:1;
 }
 
@@ -89,18 +104,26 @@ nav a{
 /*footer*/
 
 footer{
-    padding:4%;
+    padding:7%;
     padding-top:20px;
-
-    background: #fff;
+    background: #551a8b;
     display:flex;
     flex-direction: row;
  flex:1;
+ color: #fff;
 }
 
 /*social networks*/
+
+.navbar-brand{
+    color: #fff;
+}
 .connect a{
-    color: #000;
+    color: #fff;
+}
+
+.navbar .connect a{
+    color:#fff;
 }
 
 .connect a:focus, .connect a:hover{
