@@ -4,7 +4,8 @@
 /*glossary*/
 
 body {
-background: #eff1f2;
+    /*background:  #646d66;*/
+background: #e5e5e5;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
 
@@ -19,6 +20,11 @@ background: #eff1f2;
     min-height:100vh;*/
 }
 
+
+.logo{
+    width:250px;
+    height: 250px;
+}
 *{
     box-sizing: border-box;
     -moz-box-sizing:border-box;
@@ -65,20 +71,32 @@ h3{
 /*navigation*/
 nav{
 	/*background:rgba(255,255,255,0.9);*/
-    background:  #551a8b;
+    background:  #eff1f2;
     margin-bottom: 20px;
 
 }
 
 nav a{
-    color: #fff;
+    color: #551a8b;
     opacity:1;
+    font-weight: bold;
 }
 
 .navbar-brand{
     font-weight: 800;
 
 }
+
+#top-header{
+    background: #551a8b;
+}
+
+#top-header a{
+    color: #fafafa;
+    text-decoration: none;
+}
+
+
 
 .top-header{
     padding: 1%;
@@ -127,16 +145,39 @@ nav a{
 footer{
     padding:2%;
     padding-top:20px;
-    background: #551a8b;
+    background: #eff1f2;
 /*    display:flex;
     flex-direction: row;
  flex:1;*/
  color: #fff;
 }
 
+footer a{
+    color: #551a8b;
+    text-decoration: none;
+}
+
+footer .connect a{
+    color: #551a8b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer .connect a:hover{
+    color: #f45;
+    text-decoration: none;
+    font-weight: bold
+}
 
 .footer-connect{
-    background: #eff1f2;
+    background: #551a8b;
+}
+
+
+
+.footer{
+    background: #551a8b;
+    color: #fafafa;
 }
 
 /*social networks*/
@@ -155,5 +196,6 @@ footer{
 .connect a:focus, .connect a:hover{
     color: #e55;
 }
+
 
 
