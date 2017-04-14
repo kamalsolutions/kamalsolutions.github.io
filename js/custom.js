@@ -1,23 +1,59 @@
-    //flexslider
-     $(window).load(function() {
-              $('.flexslider').flexslider({
-                animation: "slide"
-              });
-            });
 
-     //adding more for form
-     var input = document.getElementById('uploadedfile');
-var list = document.getElementById('fileList');
+ /* jQuery Pre loader
+  -----------------------------------------------*/
+$(window).load(function(){
+    $('.preloader').fadeOut(1000); // set duration in brackets    
+});
 
-//empty list for now...
-while (list.hasChildNodes()) {
-	list.removeChild(ul.firstChild);
-}
 
-//for every file...
-for (var x = 0; x < input.files.length; x++) {
-	//add to list
-	var li = document.createElement('li');
-	li.innerHTML = 'File ' + (x + 1) + ':  ' + input.files[x].name;
-	list.append(li);
-}
+$(document).ready(function() {
+
+  /* Hide mobile menu after clicking on a link
+    -----------------------------------------------*/
+    $('.navbar-collapse a').click(function(){
+        $(".navbar-collapse").collapse('hide');
+    });
+
+
+  /* Owl Carousel
+    -----------------------------------------------*/
+  $(document).ready(function() {
+    $("#owl-testimonial").owlCarousel({
+      autoPlay: 5000,
+      items : 2,
+      itemsDesktop : [1199,1],
+      itemsDesktopSmall : [979,2],
+    });
+  });
+
+
+  /* Parallax section
+    -----------------------------------------------*/
+  function initParallax() {
+    $('#home').parallax("100%", 0.1);
+    $('#service').parallax("100%", 0.3);
+    $('#about').parallax("100%", 0.2);
+    $('#team').parallax("100%", 0.3);
+    $('#portfolio').parallax("100%", 0.1);
+    $('#blog').parallax("100%", 0.2);
+    $('#faq').parallax("100%", 0.1);
+    $('#testimonial').parallax("100%", 0.3);
+    $('#contact').parallax("100%", 0.1);
+
+  }
+  initParallax();
+
+
+  /* Nivo lightbox
+    -----------------------------------------------*/
+  $('#portfolio .col-md-4 a').nivoLightbox({
+        effect: 'fadeScale',
+    });
+
+
+  /* wow
+  -------------------------------*/
+  new WOW({ mobile: false }).init();
+
+  });
+
