@@ -30,6 +30,8 @@ if( empty($errors) ) {
 
 	mail($to,$email_subject,$email_body,$headers);
 	// redirect to the 'thank you' page
+    
+    // 
 	header('Location: thank-you.html');
 }
 ?>
