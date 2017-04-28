@@ -22,7 +22,7 @@ if (!preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]
 if( empty($errors) ) {
 	$to = $myemail;
 	$email_subject = "Contact form submission: $name";
-	$email_body = "You have received a new massage. ".
+	$email_body = "You have received a new message. ".
 	" Here are the address:\n Name: $name \n Email: $email_address \n Phone: $phone \n Message: $message";
 
 	$headers = "From: $myemail\n";
@@ -31,8 +31,7 @@ if( empty($errors) ) {
 	mail($to,$email_subject,$email_body,$headers);
 	// redirect to the 'thank you' page
     
-    // 
-	header('Location: thank-you.html');
+
 }
 ?>
 <!Doctype html>
